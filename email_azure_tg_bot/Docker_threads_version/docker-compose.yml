@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  bot:
+    build: ./bot
+    command: python bot.py 
+    secrets:
+      - config
+
+secrets:
+  config:
+    file: ./bot.cfg
+      
